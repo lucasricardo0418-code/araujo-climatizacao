@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-installation.jpg";
+import heroImg from "@/assets/hero-installation.png";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -52,7 +52,7 @@ const differentials = [
   { icon: Award, title: "Atendimento especializado", desc: "Foco exclusivo em climatização, com diagnóstico técnico preciso para cada ambiente." },
   { icon: ShieldCheck, title: "Padrão profissional", desc: "Instalações executadas conforme normas técnicas e recomendações dos fabricantes." },
   { icon: Sparkles, title: "Acabamento limpo", desc: "Cuidado em cada detalhe: tubulação alinhada, fixação correta e ambiente entregue limpo e impecável." },
-  { icon: Users, title: "Equipe qualificada", desc: "Conhecimento técnico em elétrica e climatização, com responsabilidade em cada serviço." },
+  { icon: Users, title: "Atuação focada e qualificada", desc: "Conhecimento técnico em elétrica e climatização, com responsabilidade em cada serviço." },
   { icon: CheckCircle2, title: "Materiais de qualidade", desc: "Trabalhamos apenas com insumos que garantem segurança, desempenho e durabilidade." },
   { icon: Thermometer, title: "Compromisso com excelência", desc: "Mais que instalar. Se orgulhar de um serviço bem feito. Esse é o padrão Araujo Climatização." },
 ];
