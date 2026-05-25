@@ -72,14 +72,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Araujo Climatização — Instalação e manutenção de ar-condicionado em Morada Nova de Minas" },
+      { name: "description", content: "Especialistas em climatização: instalação, manutenção e higienização de ar-condicionado com padrão técnico elevado em Morada Nova de Minas e região." },
+      { name: "author", content: "Araujo Climatização" },
+      { property: "og:title", content: "Araujo Climatização — Mais que instalar. Fazer direito." },
+      { property: "og:description", content: "Instalação, manutenção e higienização de ar-condicionado com padrão profissional. Atendimento em Morada Nova de Minas, Três Marias, Pompéu, Abaeté e região." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
