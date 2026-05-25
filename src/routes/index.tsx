@@ -51,27 +51,30 @@ const regions = [
 const differentials = [
   { icon: Award, title: "Atendimento especializado", desc: "Foco exclusivo em climatização, com diagnóstico técnico preciso para cada ambiente." },
   { icon: ShieldCheck, title: "Padrão profissional", desc: "Instalações executadas conforme normas técnicas e recomendações dos fabricantes." },
-  { icon: Sparkles, title: "Acabamento limpo", desc: "Cuidado em cada detalhe: tubulação alinhada, fixação correta e ambiente entregue impecável." },
-  { icon: Users, title: "Equipe qualificada", desc: "Conhecimento técnico em elétrica e refrigeração, com responsabilidade em cada serviço." },
+  { icon: Sparkles, title: "Acabamento limpo", desc: "Cuidado em cada detalhe: tubulação alinhada, fixação correta e ambiente entregue limpo e impecável." },
+  { icon: Users, title: "Equipe qualificada", desc: "Conhecimento técnico em elétrica e climatização, com responsabilidade em cada serviço." },
   { icon: CheckCircle2, title: "Materiais de qualidade", desc: "Trabalhamos apenas com insumos que garantem segurança, desempenho e durabilidade." },
-  { icon: Thermometer, title: "Compromisso com excelência", desc: "Mais que instalar. Fazer direito — esse é o padrão Araujo Climatização." },
+  { icon: Thermometer, title: "Compromisso com excelência", desc: "Mais que instalar. Se orgulhar de um serviço bem feito. Esse é o padrão Araujo Climatização." },
 ];
 
 const services = [
   {
     icon: Wind,
-    name: "Instalação",
-    text: "Realizamos sua instalação no padrão Araujo Climatização, utilizando materiais de qualidade e seguindo as recomendações dos fabricantes para garantir segurança, desempenho e durabilidade.",
+    name: "INSTALAÇÃO",
+    text: "Realizamos sua instalação utilizando somente materiais de qualidade e seguindo as recomendações dos fabricantes para garantir segurança, desempenho e durabilidade.",
+    cta: "Quero meu ar condicionado novinho em folha",
   },
   {
     icon: Wrench,
-    name: "Manutenção",
+    name: "MANUTENÇÃO",
     text: "Identificamos as causas do mau funcionamento ou perda de desempenho do equipamento e realizamos o reparo adequado com responsabilidade técnica.",
+    cta: "Conforto e tranquilidade onde eu estiver",
   },
   {
     icon: Sparkles,
-    name: "Limpeza e Higienização",
+    name: "LIMPEZA E HIGIENIZAÇÃO",
     text: "Executamos limpeza completa da unidade interna e externa, removendo fungos, sujeiras e agentes nocivos, contribuindo para melhor desempenho e qualidade do ar.",
+    cta: "Saúde e bem-estar em primeiro lugar",
   },
 ];
 
@@ -160,7 +163,7 @@ function Header() {
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-brand transition-transform hover:-translate-y-0.5"
         >
           <MessageCircle className="h-4 w-4" />
-          Solicitar orçamento
+          Faça o orçamento agora
         </a>
         <a
           href={WHATSAPP_URL}
@@ -168,7 +171,7 @@ function Header() {
           rel="noopener noreferrer"
           className="md:hidden inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-2 text-xs font-semibold text-primary-foreground"
         >
-          <MessageCircle className="h-3.5 w-3.5" /> Orçamento
+          <MessageCircle className="h-3.5 w-3.5" /> Whatsapp
         </a>
       </div>
     </header>
@@ -191,7 +194,7 @@ function Hero() {
             <span className="text-gradient-brand">padrão técnico</span> de verdade.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Atendimento profissional, acabamento acima da média e responsabilidade técnica
+            Ambiente confortável com atendimento profissional, acabamento acima da média e responsabilidade técnica
             em cada etapa. Atendemos Morada Nova de Minas e toda a região com o padrão
             <span className="font-semibold text-brand-ink"> Araujo Climatização</span>.
           </p>
@@ -203,7 +206,7 @@ function Hero() {
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-brand transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Solicitar orçamento
+              Faça o orçamento agora
             </a>
             <a
               href="#servicos"
@@ -214,8 +217,8 @@ function Hero() {
             </a>
           </div>
           <div className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-6">
-            <Stat n="8" label="Cidades atendidas" />
-            <Stat n="100%" label="Foco em climatização" />
+            <Stat n="X" label="Cidades atendidas" />
+            <Stat n="100%" label="Foco em bem-estar e qualidade técnica" />
             <Stat n="5★" label="Avaliações Google" />
           </div>
         </div>
@@ -293,7 +296,7 @@ function About() {
             Quem somos
           </div>
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-brand-ink sm:text-4xl">
-            Mais que instalar. <span className="text-gradient-brand">Fazer direito.</span>
+            Qualidade não é discurso clichê. <span className="text-gradient-brand">É compromisso.</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
             A Araujo Climatização é uma empresa especializada exclusivamente em climatização,
@@ -304,7 +307,7 @@ function About() {
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             Não fazemos serviço amador. Cada instalação segue as recomendações dos fabricantes,
             normas técnicas e o cuidado de quem entende que um ar-condicionado bem instalado
-            dura mais, consome menos e funciona melhor.
+            dura mais, consome menos e transforma toda a experiência de conforto do ambiente.
           </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {[
@@ -342,7 +345,7 @@ function Differentials() {
         <SectionHeader
           eyebrow="Diferenciais"
           title={<>Por que a Araujo Climatização é <span className="text-gradient-brand">referência</span> na região</>}
-          desc="Trabalhamos com método, técnica e cuidado em cada detalhe — do orçamento à entrega final."
+          desc="Trabalhamos com método, técnica e cuidado em cada detalhe. Desde o orçamento à entrega final."
         />
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {differentials.map((d) => (
@@ -366,7 +369,7 @@ function Services() {
       <SectionHeader
         eyebrow="Serviços"
         title={<>Soluções completas em <span className="text-gradient-brand">climatização</span></>}
-        desc="Atuação focada — sem desvios. Apenas serviços que dominamos com profundidade técnica."
+        desc="Atuação focada sem desvios. Apenas serviços que dominamos com profundidade técnica."
       />
       <div className="mt-14 grid gap-6 lg:grid-cols-3">
         {services.map((s, i) => (
@@ -377,7 +380,7 @@ function Services() {
                 <s.icon className="h-6 w-6" />
               </div>
               <div className="mt-6 text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                0{i + 1} — Serviço
+                <br />
               </div>
               <h3 className="mt-2 font-display text-2xl font-bold text-brand-ink">{s.name}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
@@ -387,7 +390,7 @@ function Services() {
                 rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
               >
-                Solicitar este serviço <ArrowRight className="h-4 w-4" />
+                {s.cta} <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -400,14 +403,14 @@ function Services() {
 function MarketProblems() {
   const bad = [
     "Instalações mal feitas e fora de norma",
-    "Acabamento ruim e tubulação desalinhada",
-    "Falta de cuidado com o ambiente do cliente",
+    "Acabamento ruim e tubulação desalinhada (muitas vezes, sem tubulação)",
+    "Falta de cuidado com o seu ambiente, seja na estética, qualidade térmica ou limpeza final",
     "Materiais inadequados para reduzir custo",
     "Ausência de suporte após o serviço",
     "Serviço sem padrão e sem responsabilidade",
   ];
   const good = [
-    "Instalação dentro das normas e do fabricante",
+    "Instalação dentro das normas do fabricante",
     "Acabamento limpo, alinhado e organizado",
     "Ambiente do cliente protegido e entregue impecável",
     "Materiais de qualidade que garantem durabilidade",
@@ -420,7 +423,7 @@ function MarketProblems() {
         <SectionHeader
           eyebrow="Padrão de mercado"
           title={<>O que separa um serviço comum de um <span className="text-gradient-brand">trabalho bem feito</span></>}
-          desc="Existe diferença real entre apenas instalar e instalar com padrão técnico. Veja onde a Araujo Climatização atua diferente."
+          desc="Você merece o melhor. Identifique qual dos modelos de serviço você espera para climatizar seu ambiente:"
         />
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           <div className="rounded-2xl border border-border bg-background p-8">
@@ -626,7 +629,7 @@ function FinalCTA() {
               Pronto para começar
             </div>
             <h2 className="mt-5 font-display text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Instalação correta, no padrão técnico que sua casa ou empresa merece.
+              Instalação correta, sem dor de cabeça, como sua casa ou empresa merece.
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-white/85">
               Fale agora com a equipe da Araujo Climatização pelo WhatsApp e receba um orçamento
@@ -641,7 +644,7 @@ function FinalCTA() {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-bold text-primary shadow-2xl transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-5 w-5" />
-              Solicitar orçamento no WhatsApp
+              Faça o orçamento agora
             </a>
             <a
               href="tel:+5531982104934"
@@ -702,7 +705,7 @@ function Footer() {
         </div>
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
           <span>© {new Date().getFullYear()} Araujo Climatização. Todos os direitos reservados.</span>
-          <span className="font-display font-semibold text-brand-ink">Mais que instalar. Fazer direito.</span>
+          <span className="font-display font-semibold text-brand-ink">Qualidade não é discurso clichê. É compromisso.</span>
         </div>
       </div>
     </footer>
