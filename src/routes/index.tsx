@@ -21,7 +21,7 @@ import {
   ArrowRight,
   Thermometer,
   ClipboardList,
-  HeadphonesIcon,
+  Headphones,
   Snowflake,
 } from "lucide-react";
 
@@ -80,7 +80,7 @@ const processSteps = [
   { icon: ClipboardList, title: "Entendimento da necessidade", desc: "Avaliamos o ambiente, o equipamento e o melhor caminho técnico." },
   { icon: Thermometer, title: "Orçamento transparente", desc: "Proposta clara, sem surpresas, com escopo definido." },
   { icon: Wrench, title: "Execução profissional", desc: "Serviço executado com padrão técnico e acabamento cuidadoso." },
-  { icon: HeadphonesIcon, title: "Suporte e finalização", desc: "Entregamos o ambiente limpo e seguimos disponíveis após o serviço." },
+  { icon: Headphones, title: "Suporte e finalização", desc: "Entregamos o ambiente limpo e seguimos disponíveis após o serviço." },
 ];
 
 const testimonials = [
@@ -130,7 +130,7 @@ function Logo({ light = false }: { light?: boolean }) {
         <Snowflake className="h-5 w-5 text-white" strokeWidth={2.5} />
       </div>
       <div className="leading-tight">
-        <div className={`font-display font-700 text-[15px] tracking-tight ${light ? "text-white" : "text-brand-ink"}`}>
+        <div className={`font-display font-bold text-[15px] tracking-tight ${light ? "text-white" : "text-brand-ink"}`}>
           Araujo Climatização
         </div>
         <div className={`text-[11px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`}>
