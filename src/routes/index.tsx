@@ -137,7 +137,7 @@ function Logo({ light = false }: { light?: boolean }) {
           Araujo Climatização
         </div>
         <div className={`text-[11px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`}>
-          Padrão técnico • MG
+          MORADA NOVA DE MINAS • MG
         </div>
       </div>
     </a>
