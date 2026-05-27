@@ -188,4 +188,7 @@
   .shadow-card-soft {
     box-shadow: 0 1px 0 rgba(12, 76, 111, 0.04), 0 12px 32px -16px rgba(12, 76, 111, 0.18);
   }
+  #lovable-badge { 
+  display: none !important; 
+}
 }
