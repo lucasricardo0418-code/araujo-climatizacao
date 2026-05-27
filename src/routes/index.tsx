@@ -163,7 +163,7 @@ function Header() {
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-brand transition-transform hover:-translate-y-0.5"
         >
           <MessageCircle className="h-4 w-4" />
-          Faça o orçamento agora
+          Faça já o orçamento
         </a>
         <a
           href={WHATSAPP_URL}
