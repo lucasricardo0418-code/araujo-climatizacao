@@ -171,7 +171,7 @@ function Header() {
           rel="noopener noreferrer"
           className="md:hidden inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-2 text-xs font-semibold text-primary-foreground"
         >
-          <MessageCircle className="h-3.5 w-3.5" /> Whatsapp
+          <MessageCircle className="h-3.5 w-3.5" /> Orçamento
         </a>
       </div>
     </header>
@@ -211,9 +211,9 @@ function Hero() {
             </a>
           </div>
           <div className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-6">
-            <Stat n="8" label="Regiões atendidas" />
-            <Stat n="100%" label="Foco em bem-estar e qualidade técnica" />
-            <Stat n="5★" label="Avaliações Google" />
+            <Stat n="" label="" />
+            <Stat n="" label="" />
+            <Stat n="" label="" />
           </div>
         </div>
         <div className="relative">
@@ -226,15 +226,6 @@ function Hero() {
               height={1200}
               className="h-full w-full object-cover"
             />
-          </div>
-          <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-border bg-card p-4 shadow-card-soft sm:flex sm:items-center sm:gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent text-primary">
-              <ShieldCheck className="h-5 w-5" />
-            </div>
-            <div>
-              <div className="text-sm font-semibold text-brand-ink">Garantia de execução</div>
-              <div className="text-xs text-muted-foreground">Responsabilidade técnica em cada serviço</div>
-            </div>
           </div>
         </div>
       </div>
@@ -253,7 +244,7 @@ function Stat({ n, label }: { n: string; label: string }) {
 
 function TrustBar() {
   const items = [
-    "Instalação", "Manutenção", "Higienização", "Atendimento regional", "Padrão técnico",
+    "INSTALAÇÃO", "MANUTENÇÃO", "HIGIENIZAÇÃO", "ATENDIMENTO REGIONAL", "PADRÃO TÉCNICO",
   ];
   return (
     <div className="border-y border-border bg-card">
