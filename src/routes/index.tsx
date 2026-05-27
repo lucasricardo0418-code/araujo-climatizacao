@@ -171,7 +171,7 @@ function Header() {
           rel="noopener noreferrer"
           className="md:hidden inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-2 text-xs font-semibold text-primary-foreground"
         >
-          <MessageCircle className="h-3.5 w-3.5" /> Whatsapp
+          <MessageCircle className="h-3.5 w-3.5" /> Orçamento
         </a>
       </div>
     </header>
@@ -211,9 +211,9 @@ function Hero() {
             </a>
           </div>
           <div className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-6">
-            <Stat n="8" label="Regiões atendidas" />
-            <Stat n="100%" label="Foco em bem-estar e qualidade técnica" />
-            <Stat n="5★" label="Avaliações Google" />
+            <Stat n="" label="" />
+            <Stat n="" label="" />
+            <Stat n="" label="" />
           </div>
         </div>
         <div className="relative">
@@ -253,7 +253,7 @@ function Stat({ n, label }: { n: string; label: string }) {
 
 function TrustBar() {
   const items = [
-    "Instalação", "Manutenção", "Higienização", "Atendimento regional", "Padrão técnico",
+    "INSTALAÇÃO", "MANUTENÇÃO", "HIGIENIZAÇÃO", "ATENDIMENTO REGIONAL", "PADRÃO TÉCNICO",
   ];
   return (
     <div className="border-y border-border bg-card">
