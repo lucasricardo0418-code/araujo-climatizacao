@@ -163,7 +163,7 @@ function Header() {
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-brand transition-transform hover:-translate-y-0.5"
         >
           <MessageCircle className="h-4 w-4" />
-          Faça já o orçamento
+          Fale no Whatsapp
         </a>
         <a
           href={WHATSAPP_URL}
@@ -200,7 +200,7 @@ function Hero() {
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-brand transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Faça já o orçamento
+              Fale no Whatsapp
             </a>
             <a
               href="#servicos"
@@ -638,7 +638,7 @@ function FinalCTA() {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-bold text-primary shadow-2xl transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-5 w-5" />
-              Faça já o orçamento
+              Fale no Whatsapp
             </a>
             <a
               href="tel:+5531982104934"
