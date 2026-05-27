@@ -638,7 +638,7 @@ function FinalCTA() {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-bold text-primary shadow-2xl transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-5 w-5" />
-              Faça o orçamento agora
+              Faça já o orçamento
             </a>
             <a
               href="tel:+5531982104934"
