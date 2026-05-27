@@ -709,8 +709,4 @@ function FloatingWhats() {
       <MessageCircle className="h-6 w-6" />
     </a>
   );
-
-  #lovable-badge { 
-  display: none !important; 
-}
 }
