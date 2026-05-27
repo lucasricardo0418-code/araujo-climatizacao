@@ -185,18 +185,12 @@ function Hero() {
       <div className="absolute -top-40 -right-40 h-[480px] w-[480px] rounded-full bg-accent/50 blur-3xl" />
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:px-8 lg:py-24">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground shadow-card-soft">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Especialistas em climatização • Morada Nova de Minas
-          </div>
-          <h1 className="mt-6 font-display text-[2.5rem] leading-[1.05] font-bold tracking-tight text-brand-ink sm:text-5xl lg:text-[3.75rem]">
-            Instalação de ar-condicionado feita com{" "}
-            <span className="text-gradient-brand">padrão técnico</span> de verdade.
+          <h1 className="font-display text-[2.5rem] leading-[1.05] font-bold tracking-tight text-brand-ink sm:text-5xl lg:text-[3.75rem]">
+            Instalação de ar-condicionado sem{" "}
+            <span className="text-gradient-brand">dor de cabeça</span>.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Ambiente confortável com atendimento profissional, acabamento acima da média e responsabilidade técnica
-            em cada etapa. Atendemos Morada Nova de Minas e toda a região com o padrão
-            <span className="font-semibold text-brand-ink"> Araujo Climatização</span>.
+            Seu ambiente mais confortável começa com uma instalação bem feita. Instalação profissional, limpa e acabamento de qualidade do início ao fim. Atendemos Morada Nova de Minas e região.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
@@ -206,7 +200,7 @@ function Hero() {
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-brand transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Faça o orçamento agora
+              Faça já o orçamento
             </a>
             <a
               href="#servicos"
