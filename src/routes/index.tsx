@@ -211,7 +211,7 @@ function Hero() {
             </a>
           </div>
           <div className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-6">
-            <Stat n="X" label="Cidades atendidas" />
+            <Stat n="8" label="Regiões atendidas" />
             <Stat n="100%" label="Foco em bem-estar e qualidade técnica" />
             <Stat n="5★" label="Avaliações Google" />
           </div>
