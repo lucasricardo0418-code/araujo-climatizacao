@@ -362,7 +362,7 @@ function Services() {
     <section id="servicos" className="mx-auto max-w-6xl px-5 py-20 lg:px-8 lg:py-28">
       <SectionHeader
         eyebrow="Serviços"
-        title={<>Soluções completas em <span className="text-gradient-brand">climatização</span></>}
+        title={<>Serviços completos em <span className="text-gradient-brand">climatização</span></>}
         desc="Atuação focada sem desvios. Apenas serviços que dominamos com profundidade técnica."
       />
       <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -508,7 +508,7 @@ function Gallery() {
       <div className="mx-auto max-w-6xl px-5 py-20 lg:px-8 lg:py-28">
         <SectionHeader
           eyebrow="Serviços executados"
-          title={<>Padrão visual que <span className="text-gradient-brand">se vê</span></>}
+          title={<>Projetos realizados <span className="text-gradient-brand">recentemente</span></>}
           desc="Cada instalação reflete o nosso compromisso com acabamento, organização e durabilidade."
         />
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
