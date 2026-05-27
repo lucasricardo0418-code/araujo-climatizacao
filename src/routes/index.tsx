@@ -137,7 +137,7 @@ function Logo({ light = false }: { light?: boolean }) {
           Araujo Climatização
         </div>
         <div className={`text-[11px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`}>
-          Padrão técnico • MG
+          MORADA NOVA DE MINAS • MG
         </div>
       </div>
     </a>
@@ -163,7 +163,7 @@ function Header() {
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-brand transition-transform hover:-translate-y-0.5"
         >
           <MessageCircle className="h-4 w-4" />
-          Faça o orçamento agora
+          Faça já o orçamento
         </a>
         <a
           href={WHATSAPP_URL}
@@ -185,18 +185,12 @@ function Hero() {
       <div className="absolute -top-40 -right-40 h-[480px] w-[480px] rounded-full bg-accent/50 blur-3xl" />
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:px-8 lg:py-24">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground shadow-card-soft">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Especialistas em climatização • Morada Nova de Minas
-          </div>
-          <h1 className="mt-6 font-display text-[2.5rem] leading-[1.05] font-bold tracking-tight text-brand-ink sm:text-5xl lg:text-[3.75rem]">
-            Instalação de ar-condicionado feita com{" "}
-            <span className="text-gradient-brand">padrão técnico</span> de verdade.
+          <h1 className="font-display text-[2.5rem] leading-[1.05] font-bold tracking-tight text-brand-ink sm:text-5xl lg:text-[3.75rem]">
+            Instalação de ar-condicionado sem{" "}
+            <span className="text-gradient-brand">dor de cabeça</span>.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Ambiente confortável com atendimento profissional, acabamento acima da média e responsabilidade técnica
-            em cada etapa. Atendemos Morada Nova de Minas e toda a região com o padrão
-            <span className="font-semibold text-brand-ink"> Araujo Climatização</span>.
+            Seu ambiente mais confortável começa com uma instalação bem feita. Instalação profissional, limpa e acabamento de qualidade do início ao fim. Atendemos Morada Nova de Minas e região.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
@@ -206,7 +200,7 @@ function Hero() {
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-brand transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Faça o orçamento agora
+              Faça já o orçamento
             </a>
             <a
               href="#servicos"
@@ -217,7 +211,7 @@ function Hero() {
             </a>
           </div>
           <div className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-6">
-            <Stat n="X" label="Cidades atendidas" />
+            <Stat n="8" label="Regiões atendidas" />
             <Stat n="100%" label="Foco em bem-estar e qualidade técnica" />
             <Stat n="5★" label="Avaliações Google" />
           </div>
@@ -644,7 +638,7 @@ function FinalCTA() {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-bold text-primary shadow-2xl transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-5 w-5" />
-              Faça o orçamento agora
+              Faça já o orçamento
             </a>
             <a
               href="tel:+5531982104934"
