@@ -227,15 +227,6 @@ function Hero() {
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-border bg-card p-4 shadow-card-soft sm:flex sm:items-center sm:gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent text-primary">
-              <ShieldCheck className="h-5 w-5" />
-            </div>
-            <div>
-              <div className="text-sm font-semibold text-brand-ink">Garantia de execução</div>
-              <div className="text-xs text-muted-foreground">Responsabilidade técnica em cada serviço</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
