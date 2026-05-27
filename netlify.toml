@@ -1,8 +1,13 @@
 [build]
   command = "npm run build"
-  publish = "dist"
+  publish = "dist/public"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["hono"]
 
 [[redirects]]
   from = "/*"
-  to = "/"
+  to = "/.netlify/functions/server"
   status = 200
+  force = true
