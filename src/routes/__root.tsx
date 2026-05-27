@@ -75,10 +75,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Araujo Climatização — Instalação e manutenção de ar-condicionado em Morada Nova de Minas" },
       { name: "description", content: "Especialistas em climatização: instalação, manutenção e higienização de ar-condicionado com padrão técnico elevado em Morada Nova de Minas e região." },
       { name: "author", content: "Araujo Climatização" },
-      { property: "og:title", content: "Araujo Climatização — Mais que instalar. Fazer direito." },
-      { property: "og:description", content: "Instalação, manutenção e higienização de ar-condicionado com padrão profissional. Atendimento em Morada Nova de Minas, Três Marias, Pompéu, Abaeté e região." },
+      { property: "og:title", content: "Araujo Climatização — Instalação e manutenção de ar-condicionado em Morada Nova de Minas" },
+      { property: "og:description", content: "Especialistas em climatização: instalação, manutenção e higienização de ar-condicionado com padrão técnico elevado em Morada Nova de Minas e região." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Araujo Climatização — Instalação e manutenção de ar-condicionado em Morada Nova de Minas" },
+      { name: "twitter:description", content: "Especialistas em climatização: instalação, manutenção e higienização de ar-condicionado com padrão técnico elevado em Morada Nova de Minas e região." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5cdb5f33-f7fe-4163-9e8c-26887eee1fd3/id-preview-3f60cdc0--bb789653-8c9e-46b3-afe8-aeb00bfd6744.lovable.app-1779885854578.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5cdb5f33-f7fe-4163-9e8c-26887eee1fd3/id-preview-3f60cdc0--bb789653-8c9e-46b3-afe8-aeb00bfd6744.lovable.app-1779885854578.png" },
     ],
     links: [
       {
