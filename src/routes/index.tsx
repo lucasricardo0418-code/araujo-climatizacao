@@ -545,6 +545,7 @@ function Gallery() {
                 src={im.src}
                 alt={im.alt}
                 loading="lazy"
+                decoding="async"
                 width={1024}
                 height={1024}
                 className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-105"
