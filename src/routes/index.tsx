@@ -111,7 +111,7 @@ const testimonials = [
     source: "GOOGLE"
   },
   {
-    name: "\n",
+    name: "Laerte Leite",
     text: "Empresa de confiança, técnico bom e dedicado, serviço de qualidade!",
     source: "Google"
   },
