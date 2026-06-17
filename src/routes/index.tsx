@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-installation.png";
+import heroImg from "@/assets/hero-installation.webp";
 import work1 from "@/assets/work-1.png.asset.json";
 import work2 from "@/assets/work-2.png.asset.json";
 import work3 from "@/assets/work-3.png.asset.json";
@@ -40,6 +40,11 @@ import {
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    links: [
+      { rel: "preload", as: "image", href: heroImg, fetchpriority: "high" },
+    ],
+  }),
 });
 
 const WHATSAPP_URL =
@@ -238,8 +243,10 @@ function Hero() {
             <img
               src={heroImg}
               alt="Técnico da Araujo Climatização instalando ar-condicionado split com padrão profissional"
-              width={1600}
-              height={1200}
+              width={1400}
+              height={1050}
+              fetchPriority="high"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>
