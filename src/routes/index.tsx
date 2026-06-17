@@ -333,8 +333,8 @@ function About() {
         </div>
         <div className="relative">
           <div className="grid grid-cols-2 gap-4">
-            <img src={work15.url} alt="Instalação Philco em fachada com telhado colonial" loading="lazy" width={1024} height={1024} className="aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
-            <img src={work13.url} alt="Sistema profissional de climatização instalado em Minas Gerais" loading="lazy" width={1024} height={1024} className="mt-8 aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
+            <img src={work15.url} alt="Instalação Philco em fachada com telhado colonial" loading="lazy" decoding="async" width={1024} height={1024} className="aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
+            <img src={work13.url} alt="Sistema profissional de climatização instalado em Minas Gerais" loading="lazy" decoding="async" width={1024} height={1024} className="mt-8 aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
           </div>
           <div className="absolute -bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl border border-border bg-card px-5 py-3 shadow-card-soft">
             <Award className="h-5 w-5 text-primary" />
