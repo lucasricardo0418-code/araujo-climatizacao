@@ -103,7 +103,7 @@ const testimonials = [
   {
     name: "Vinicius\u00a0 Gomes",
     text: "Super indico 👏🏻👏🏻👏🏻 Ótima Empresa com serviço de qualidade em instalações de máquinas de climatização e manutenção e limpeza bem executada de forma minuciosa. Vale a pena o investimento com eles por um ambiente melhor 🙌🏻",
-    source: "Laerte Leite\nGOOGLE"
+    source: "GOOGLE"
   },
   {
     name: "Elaine Bessa",
