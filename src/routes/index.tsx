@@ -101,16 +101,19 @@ const processSteps = [
 
 const testimonials = [
   {
-    name: "Cliente verificado — Google",
-    text: "Serviço impecável. Pontualidade, organização e um acabamento muito acima do que estamos acostumados na região. Recomendo demais.",
+    name: "Laerte Leite",
+    text: "Super indico 👏🏻👏🏻👏🏻 Ótima Empresa com serviço de qualidade em instalações de máquinas de climatização e manutenção e limpeza bem executada de forma minuciosa. Vale a pena o investimento com eles por um ambiente melhor 🙌🏻",
+    source: "GOOGLE"
   },
   {
-    name: "Cliente verificado — Google",
-    text: "Profissionalismo do início ao fim. Explicaram cada etapa, deixaram tudo limpo e o ar-condicionado funcionando perfeitamente.",
+    name: "Elaine Bessa",
+    text: "Venho aqui falar sobre esta empresa que instalou o ar na minha casa! Eu amei o trabalho, muito comprometido com o trabalho; caprichoso, me passou muita confiança. Só tenho a agradecer! Gostei tanto que vou chamar para instalar mais um.",
+    source: "Elaine Bessa - ⭐⭐⭐⭐⭐\nGOOGLE"
   },
   {
-    name: "Cliente verificado — Google",
-    text: "Levam o trabalho muito a sério. É raro encontrar esse nível de cuidado técnico por aqui. Empresa de confiança.",
+    name: "Cliente verificado",
+    text: "Empresa de confiança, técnico bom e dedicado, serviço de qualidade!",
+    source: "Google"
   },
 ];
 
@@ -577,10 +580,10 @@ function Testimonials() {
                 <Star key={k} className="h-4 w-4 fill-current" />
               ))}
             </div>
-            <p className="mt-5 flex-1 text-sm leading-relaxed text-brand-ink">"{t.text}"</p>
+            <p className="mt-5 flex-1 text-sm leading-relaxed text-brand-ink">{t.text}</p>
             <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
               <span className="text-xs font-medium text-muted-foreground">{t.name}</span>
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-primary">Google</span>
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-primary whitespace-pre-line text-right">{t.source}</span>
             </div>
           </div>
         ))}
