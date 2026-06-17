@@ -4,6 +4,13 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
+import work1 from "@/assets/work-1.png.asset.json";
+import work2 from "@/assets/work-2.png.asset.json";
+import work3 from "@/assets/work-3.png.asset.json";
+import work4 from "@/assets/work-4.png.asset.json";
+import work5 from "@/assets/work-5.png.asset.json";
+import work6 from "@/assets/work-6.png.asset.json";
+import work7 from "@/assets/work-7.png.asset.json";
 import {
   Wrench,
   Wind,
@@ -489,6 +496,13 @@ function Regions() {
 
 function Gallery() {
   const imgs = [
+    { src: work1.url, alt: "Instalação de ar-condicionado em salão de igreja" },
+    { src: work2.url, alt: "Split instalado em quarto com acabamento limpo" },
+    { src: work3.url, alt: "Condensadora LG Dual Inverter instalada externamente" },
+    { src: work4.url, alt: "Instalação externa em área de serviço" },
+    { src: work5.url, alt: "Técnico Araujo Climatização executando manutenção" },
+    { src: work6.url, alt: "Passagem de tubulação antes do acabamento" },
+    { src: work7.url, alt: "Condensadora Elgin Inverter fixada na fachada" },
     { src: gallery2, alt: "Instalação de ar-condicionado em quarto" },
     { src: gallery1, alt: "Detalhe técnico de tubulação" },
     { src: gallery4, alt: "Condensadora instalada externamente" },
