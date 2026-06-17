@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-installation.png";
+import heroImg from "@/assets/hero-installation.webp";
 import work1 from "@/assets/work-1.png.asset.json";
 import work2 from "@/assets/work-2.png.asset.json";
 import work3 from "@/assets/work-3.png.asset.json";
@@ -40,6 +40,11 @@ import {
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    links: [
+      { rel: "preload", as: "image", href: heroImg, fetchpriority: "high" },
+    ],
+  }),
 });
 
 const WHATSAPP_URL =
@@ -238,8 +243,10 @@ function Hero() {
             <img
               src={heroImg}
               alt="Técnico da Araujo Climatização instalando ar-condicionado split com padrão profissional"
-              width={1600}
-              height={1200}
+              width={1400}
+              height={1050}
+              fetchPriority="high"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>
@@ -326,8 +333,8 @@ function About() {
         </div>
         <div className="relative">
           <div className="grid grid-cols-2 gap-4">
-            <img src={work15.url} alt="Instalação Philco em fachada com telhado colonial" loading="lazy" width={1024} height={1024} className="aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
-            <img src={work13.url} alt="Sistema profissional de climatização instalado em Minas Gerais" loading="lazy" width={1024} height={1024} className="mt-8 aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
+            <img src={work15.url} alt="Instalação Philco em fachada com telhado colonial" loading="lazy" decoding="async" width={1024} height={1024} className="aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
+            <img src={work13.url} alt="Sistema profissional de climatização instalado em Minas Gerais" loading="lazy" decoding="async" width={1024} height={1024} className="mt-8 aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
           </div>
           <div className="absolute -bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl border border-border bg-card px-5 py-3 shadow-card-soft">
             <Award className="h-5 w-5 text-primary" />
@@ -538,6 +545,7 @@ function Gallery() {
                 src={im.src}
                 alt={im.alt}
                 loading="lazy"
+                decoding="async"
                 width={1024}
                 height={1024}
                 className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-105"
