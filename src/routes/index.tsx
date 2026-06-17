@@ -580,10 +580,10 @@ function Testimonials() {
                 <Star key={k} className="h-4 w-4 fill-current" />
               ))}
             </div>
-            <p className="mt-5 flex-1 text-sm leading-relaxed text-brand-ink">"{t.text}"</p>
+            <p className="mt-5 flex-1 text-sm leading-relaxed text-brand-ink">{t.text}</p>
             <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
               <span className="text-xs font-medium text-muted-foreground">{t.name}</span>
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-primary">Google</span>
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-primary whitespace-pre-line text-right">{t.source}</span>
             </div>
           </div>
         ))}
