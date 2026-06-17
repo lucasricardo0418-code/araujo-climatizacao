@@ -1,9 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-installation.png";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
 import work1 from "@/assets/work-1.png.asset.json";
 import work2 from "@/assets/work-2.png.asset.json";
 import work3 from "@/assets/work-3.png.asset.json";
@@ -11,6 +7,16 @@ import work4 from "@/assets/work-4.png.asset.json";
 import work5 from "@/assets/work-5.png.asset.json";
 import work6 from "@/assets/work-6.png.asset.json";
 import work7 from "@/assets/work-7.png.asset.json";
+import work8 from "@/assets/work-8.png.asset.json";
+import work9 from "@/assets/work-9.png.asset.json";
+import work10 from "@/assets/work-10.png.asset.json";
+import work11 from "@/assets/work-11.png.asset.json";
+import work12 from "@/assets/work-12.png.asset.json";
+import work13 from "@/assets/work-13.png.asset.json";
+import work14 from "@/assets/work-14.jpg.asset.json";
+import work15 from "@/assets/work-15.png.asset.json";
+import work16 from "@/assets/work-16.png.asset.json";
+import work17 from "@/assets/work-17.png.asset.json";
 import {
   Wrench,
   Wind,
@@ -317,8 +323,8 @@ function About() {
         </div>
         <div className="relative">
           <div className="grid grid-cols-2 gap-4">
-            <img src={gallery2} alt="Instalação finalizada de ar-condicionado" loading="lazy" width={1024} height={1024} className="aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
-            <img src={gallery1} alt="Detalhe de instalação técnica" loading="lazy" width={1024} height={1024} className="mt-8 aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
+            <img src={work15.url} alt="Instalação Philco em fachada com telhado colonial" loading="lazy" width={1024} height={1024} className="aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
+            <img src={work13.url} alt="Sistema profissional de climatização instalado em Minas Gerais" loading="lazy" width={1024} height={1024} className="mt-8 aspect-square w-full rounded-2xl object-cover shadow-card-soft" />
           </div>
           <div className="absolute -bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl border border-border bg-card px-5 py-3 shadow-card-soft">
             <Award className="h-5 w-5 text-primary" />
@@ -496,17 +502,23 @@ function Regions() {
 
 function Gallery() {
   const imgs = [
-    { src: work1.url, alt: "Instalação de ar-condicionado em salão de igreja" },
-    { src: work2.url, alt: "Split instalado em quarto com acabamento limpo" },
+    { src: work13.url, alt: "Sistema profissional de climatização — Minas Gerais" },
+    { src: work15.url, alt: "Condensadora Philco instalada em fachada com telhado colonial" },
+    { src: work10.url, alt: "Condensadora Midea Inverter com suporte em fachada" },
+    { src: work14.url, alt: "Condensadora Elgin em fachada cinza — Morada Nova de Minas" },
     { src: work3.url, alt: "Condensadora LG Dual Inverter instalada externamente" },
+    { src: work17.url, alt: "Condensadora Philco fixada sob telhado colonial" },
+    { src: work1.url, alt: "Instalação de ar-condicionado em salão de igreja" },
+    { src: work16.url, alt: "Split Philco instalado em ambiente residencial" },
+    { src: work12.url, alt: "Instalação de split Samsung em quarto infantil" },
+    { src: work9.url, alt: "Split Elgin Inverter com acabamento limpo" },
+    { src: work2.url, alt: "Split instalado em quarto com acabamento limpo" },
+    { src: work8.url, alt: "Condensadora Elgin Inverter fixada acima das janelas" },
+    { src: work11.url, alt: "Passagem técnica de tubulação com acabamento" },
     { src: work4.url, alt: "Instalação externa em área de serviço" },
     { src: work5.url, alt: "Técnico Araujo Climatização executando manutenção" },
     { src: work6.url, alt: "Passagem de tubulação antes do acabamento" },
     { src: work7.url, alt: "Condensadora Elgin Inverter fixada na fachada" },
-    { src: gallery2, alt: "Instalação de ar-condicionado em quarto" },
-    { src: gallery1, alt: "Detalhe técnico de tubulação" },
-    { src: gallery4, alt: "Condensadora instalada externamente" },
-    { src: gallery3, alt: "Higienização profissional de ar-condicionado" },
   ];
   return (
     <section className="bg-card border-y border-border">
