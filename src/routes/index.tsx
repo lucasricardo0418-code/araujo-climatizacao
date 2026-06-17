@@ -101,16 +101,16 @@ const processSteps = [
 
 const testimonials = [
   {
-    name: "Cliente verificado — Google",
-    text: "Serviço impecável. Pontualidade, organização e um acabamento muito acima do que estamos acostumados na região. Recomendo demais.",
+    name: "Laerte Leite",
+    text: "Super indico 👏🏻👏🏻👏🏻 Ótima Empresa com serviço de qualidade em instalações de máquinas de climatização e manutenção e limpeza bem executada de forma minuciosa. Vale a pena o investimento com eles por um ambiente melhor 🙌🏻",
   },
   {
-    name: "Cliente verificado — Google",
-    text: "Profissionalismo do início ao fim. Explicaram cada etapa, deixaram tudo limpo e o ar-condicionado funcionando perfeitamente.",
+    name: "Elaine Bessa",
+    text: "Venho aqui falar sobre esta empresa que instalou o ar na minha casa! Eu amei o trabalho, muito comprometido com o trabalho; caprichoso, me passou muita confiança. Só tenho a agradecer! Gostei tanto que vou chamar para instalar mais um.",
   },
   {
-    name: "Cliente verificado — Google",
-    text: "Levam o trabalho muito a sério. É raro encontrar esse nível de cuidado técnico por aqui. Empresa de confiança.",
+    name: "Empresa de confiança, técnico bom e dedicado, serviço de qualidade!",
+    text: "Empresa de confiança, técnico bom e dedicado, serviço de qualidade!",
   },
 ];
 
