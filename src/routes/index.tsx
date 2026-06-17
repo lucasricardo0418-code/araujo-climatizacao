@@ -101,17 +101,17 @@ const processSteps = [
 
 const testimonials = [
   {
-    name: "Laerte Leite",
+    name: "Vinicius\u00a0 Gomes",
     text: "Super indico 👏🏻👏🏻👏🏻 Ótima Empresa com serviço de qualidade em instalações de máquinas de climatização e manutenção e limpeza bem executada de forma minuciosa. Vale a pena o investimento com eles por um ambiente melhor 🙌🏻",
-    source: "GOOGLE"
+    source: "Laerte Leite\nGOOGLE"
   },
   {
     name: "Elaine Bessa",
     text: "Venho aqui falar sobre esta empresa que instalou o ar na minha casa! Eu amei o trabalho, muito comprometido com o trabalho; caprichoso, me passou muita confiança. Só tenho a agradecer! Gostei tanto que vou chamar para instalar mais um.",
-    source: "Elaine Bessa - ⭐⭐⭐⭐⭐\nGOOGLE"
+    source: "GOOGLE"
   },
   {
-    name: "Cliente verificado",
+    name: "\n",
     text: "Empresa de confiança, técnico bom e dedicado, serviço de qualidade!",
     source: "Google"
   },
