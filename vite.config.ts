@@ -10,16 +10,6 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
 export default defineConfig({
   tanstackStart: {
-    prerender: {
-      enabled: true,
-      autoSubfolderIndex: true,
-      autoStaticPathsDiscovery: true,
-      crawlLinks: true,
-      failOnError: true,
-    },
-  },
-  nitro: false,
-  tanstackStart: {
     server: { entry: "server" },
     prerender: {
       enabled: true,
@@ -29,4 +19,5 @@ export default defineConfig({
       failOnError: true,
     },
   },
+  nitro: false,
 });
