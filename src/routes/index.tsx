@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-installation.webp";
+import logoAsset from "@/assets/logo-araujo-climatizacao.png.asset.json";
 import work1 from "@/assets/work-1.png.asset.json";
 import work2 from "@/assets/work-2.png.asset.json";
 import work3 from "@/assets/work-3.png.asset.json";
