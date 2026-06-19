@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-installation.webp";
+import logoAsset from "@/assets/logo-araujo-climatizacao.png.asset.json";
 import work1 from "@/assets/work-1.png.asset.json";
 import work2 from "@/assets/work-2.png.asset.json";
 import work3 from "@/assets/work-3.png.asset.json";
@@ -147,20 +148,16 @@ function Index() {
 
 /* -------------------- Components -------------------- */
 
-function Logo({ light = false }: { light?: boolean }) {
+function Logo({ light = false, className = "" }: { light?: boolean; className?: string }) {
   return (
-    <a href="#top" className="flex items-center gap-2.5 group">
-      <div className="relative h-10 w-10 rounded-xl gradient-brand flex items-center justify-center shadow-brand">
-        <Snowflake className="h-5 w-5 text-white" strokeWidth={2.5} />
-      </div>
-      <div className="leading-tight">
-        <div className={`font-display font-bold text-[15px] tracking-tight ${light ? "text-white" : "text-brand-ink"}`}>
-          Araujo Climatização
-        </div>
-        <div className={`text-[11px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`}>
-          MORADA NOVA DE MINAS • MG
-        </div>
-      </div>
+    <a href="#top" className={`flex items-center gap-2.5 group ${className}`}>
+      <img
+        src={logoAsset.url}
+        alt="Araujo Climatização"
+        width={160}
+        height={40}
+        className="h-10 w-auto object-contain"
+      />
     </a>
   );
 }
