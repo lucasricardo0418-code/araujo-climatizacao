@@ -72,14 +72,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Araujo Climatização — Instalação e manutenção de ar-condicionado em Morada Nova de Minas" },
+      { title: "Araujo Climatização — Ar-condicionado em Morada Nova" },
       { name: "description", content: "Especialistas em climatização: instalação, manutenção e higienização de ar-condicionado com padrão técnico elevado em Morada Nova de Minas e região." },
       { name: "author", content: "Araujo Climatização" },
-      { property: "og:title", content: "Araujo Climatização — Instalação e manutenção de ar-condicionado em Morada Nova de Minas" },
+      { property: "og:title", content: "Araujo Climatização — Ar-condicionado em Morada Nova" },
       { property: "og:description", content: "Especialistas em climatização: instalação, manutenção e higienização de ar-condicionado com padrão técnico elevado em Morada Nova de Minas e região." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Araujo Climatização — Instalação e manutenção de ar-condicionado em Morada Nova de Minas" },
+      { name: "twitter:title", content: "Araujo Climatização — Ar-condicionado em Morada Nova" },
       { name: "twitter:description", content: "Especialistas em climatização: instalação, manutenção e higienização de ar-condicionado com padrão técnico elevado em Morada Nova de Minas e região." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5cdb5f33-f7fe-4163-9e8c-26887eee1fd3/id-preview-3f60cdc0--bb789653-8c9e-46b3-afe8-aeb00bfd6744.lovable.app-1779885854578.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5cdb5f33-f7fe-4163-9e8c-26887eee1fd3/id-preview-3f60cdc0--bb789653-8c9e-46b3-afe8-aeb00bfd6744.lovable.app-1779885854578.png" },
@@ -88,6 +88,58 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Araujo Climatização",
+          image: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5cdb5f33-f7fe-4163-9e8c-26887eee1fd3/id-preview-3f60cdc0--bb789653-8c9e-46b3-afe8-aeb00bfd6744.lovable.app-1779885854578.png",
+          url: "https://araujoclimatizacaomg.com.br",
+          telephone: "+55-31-98210-4934",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Morada Nova de Minas",
+            addressRegion: "MG",
+            addressCountry: "BR",
+          },
+          areaServed: [
+            "Morada Nova de Minas",
+            "Biquinhas",
+            "Paineiras",
+            "Abaeté",
+            "Pompéu",
+            "Três Marias",
+            "Felixlândia",
+            "Curvelo",
+          ],
+          sameAs: ["https://www.instagram.com/araujoclimatizacao10"],
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Serviços de climatização",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Instalação de ar-condicionado",
+                  areaServed: "Morada Nova de Minas e região",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Manutenção e higienização de ar-condicionado",
+                  areaServed: "Morada Nova de Minas e região",
+                },
+              },
+            ],
+          },
+        }),
       },
     ],
   }),
