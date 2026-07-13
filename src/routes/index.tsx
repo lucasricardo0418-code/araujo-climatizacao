@@ -229,9 +229,9 @@ function Hero() {
             </a>
           </div>
           <div className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-6">
-            <Stat n="" label="" />
-            <Stat n="" label="" />
-            <Stat n="" label="" />
+            <Stat n="500+" label="Atendimentos realizados" />
+            <Stat n="100%" label="Garantia no serviço" />
+            <Stat n="8+" label="Cidades atendidas" />
           </div>
         </div>
         <div className="relative">
@@ -695,7 +695,7 @@ function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="font-display text-sm font-semibold text-brand-ink">Contato</h4>
+            <h3 className="font-display text-sm font-semibold text-brand-ink">Contato</h3>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
@@ -716,7 +716,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-display text-sm font-semibold text-brand-ink">Regiões atendidas</h4>
+            <h3 className="font-display text-sm font-semibold text-brand-ink">Regiões atendidas</h3>
             <ul className="mt-4 grid grid-cols-2 gap-y-2 text-sm text-muted-foreground">
               {regions.map((r) => <li key={r}>{r}</li>)}
             </ul>
